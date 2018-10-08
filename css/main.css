@@ -763,8 +763,8 @@ body.tg-fixedme .tg-header{
 }
 body.tg-fixedme .tg-header .tg-logo{width:130px;}
 .tg-navigationarea{
-	float:right;
-	position:relative;
+	float:center;
+	position: relative;
 	padding: 12px 0 11px;
 }
 body.tg-fixedme .tg-header .tg-navigationarea{padding: 0;}
@@ -773,11 +773,11 @@ body.tg-fixedme .tg-header .tg-navigationarea{padding: 0;}
 .tg-navigation {
 	padding: 0;
 	width: 100%;
-	float: left;
+	float: center;
 }
 .tg-navigation > ul{
 	width:100%;
-	float:left;
+	float:center;
 	font-size:13px;
 	list-style:none;
 	line-height:14px;
