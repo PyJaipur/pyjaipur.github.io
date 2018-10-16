@@ -85,27 +85,27 @@ jQuery(document).on('ready', function() {
 	/* -------------------------------------
 			NEXT EVENT COUNTER
 	-------------------------------------- */
-	var _tg_upcomingeventcounter = jQuery('#tg-upcomingeventcounter');
-	_tg_upcomingeventcounter.countdown('2018/12/12', function(event) {
-		var $this = jQuery(this).html(event.strftime(''
-			+ '<div class="tg-eventcounter"><span>%-D</span><span> Days Left</span></div>'
-			+ '<div class="tg-eventcounter"><span>%H</span><span>Hours</span></div>'
-			+ '<div class="tg-eventcounter"><span>%M</span><span>Minutes</span></div>'
-			+ '<div class="tg-eventcounter"><span>%S</span><span>Seconds</span></div>'
-		));
-	});
+	// var _tg_upcomingeventcounter = jQuery('#tg-upcomingeventcounter');
+	// _tg_upcomingeventcounter.countdown('2018/12/12', function(event) {
+	// 	var $this = jQuery(this).html(event.strftime(''
+	// 		+ '<div class="tg-eventcounter"><span>%-D</span><span> Days Left</span></div>'
+	// 		+ '<div class="tg-eventcounter"><span>%H</span><span>Hours</span></div>'
+	// 		+ '<div class="tg-eventcounter"><span>%M</span><span>Minutes</span></div>'
+	// 		+ '<div class="tg-eventcounter"><span>%S</span><span>Seconds</span></div>'
+	// 	));
+	// });
 	/* -------------------------------------
 			NEXT EVENT COUNTER
 	-------------------------------------- */
-	var _tg_upcomingeventcountervtwo = jQuery('#tg-upcomingeventcountervtwo');
-	_tg_upcomingeventcountervtwo.countdown('2018/12/12', function(event) {
-		var $this = jQuery(this).html(event.strftime(''
-			+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>%-D</span><span> Days</span></div></div>'
-			+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>%H</span><span>Hours</span></div></div>'
-			+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>%M</span><span>Minutes</span></div></div>'
-			+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>%S</span><span>Seconds</span></div></div>'
-		));
-	});
+	// var _tg_upcomingeventcountervtwo = jQuery('#tg-upcomingeventcountervtwo');
+	// _tg_upcomingeventcountervtwo.countdown('2018/12/12', function(event) {
+	// 	var $this = jQuery(this).html(event.strftime(''
+	// 		+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>%-D</span><span> Days</span></div></div>'
+	// 		+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>%H</span><span>Hours</span></div></div>'
+	// 		+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>%M</span><span>Minutes</span></div></div>'
+	// 		+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>%S</span><span>Seconds</span></div></div>'
+	// 	));
+	// });
 	/* -------------------------------------
 			TESTIMONIAL SLIDER
 	-------------------------------------- */
@@ -159,23 +159,23 @@ jQuery(document).on('ready', function() {
 	/* -------------------------------------
 			Google Map
 	-------------------------------------- */
-	var _tg_locationmap = jQuery("#tg-locationmap");
-	_tg_locationmap.gmap3({
-		marker: {
-			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
-			options: {
-				title: "Event Orgnizer",
-				icon: "images/map-marker.png",
-			}
-		},
-		map: {
-			options: {
-				zoom: 16,
-				scrollwheel: false,
-				disableDoubleClickZoom: true,
-			}
-		}
-	});
+	// var _tg_locationmap = jQuery("#tg-locationmap");
+	// _tg_locationmap.gmap3({
+	// 	marker: {
+	// 		address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
+	// 		options: {
+	// 			title: "Event Orgnizer",
+	// 			icon: "images/map-marker.png",
+	// 		}
+	// 	},
+	// 	map: {
+	// 		options: {
+	// 			zoom: 16,
+	// 			scrollwheel: false,
+	// 			disableDoubleClickZoom: true,
+	// 		}
+	// 	}
+	// });
 	/* -------------------------------------
 			TESTIMONIALS SLIDER
 	-------------------------------------- */
@@ -393,13 +393,13 @@ jQuery(document).on('ready', function() {
 	jQuery("a[data-rel]").each(function () {
 		jQuery(this).attr("rel", jQuery(this).data("rel"));
 	});
-	jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({
-		animation_speed: 'normal',
-		theme: 'dark_square',
-		slideshow: 3000,
-		autoplay_slideshow: false,
-		social_tools: false
-	});
+	// jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({
+	// 	animation_speed: 'normal',
+	// 	theme: 'dark_square',
+	// 	slideshow: 3000,
+	// 	autoplay_slideshow: false,
+	// 	social_tools: false
+	// });
 	/* -------------------------------------
 			THEME TOOLTIP
 	-------------------------------------- */
