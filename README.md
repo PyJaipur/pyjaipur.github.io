@@ -1,6 +1,6 @@
 # [PyJaipur](https://pyjaipur.github.io)
-PyJaipur Website 
-Official website of PyDelhi - Python Delhi User Group.
+ 
+Official website of PyJaipur - Python Jaipur User Group.
 
 ## Contributing
 
