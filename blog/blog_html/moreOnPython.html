@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>More On Python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="../../css/moreOnPython.css" />
+	</head>
+
+<article>
+
+		<header>
+			<div>
+				<!-- Logo -->
+				<a href="../index.html" class="logo">
+					<span><img src="../../images/logo-white.png" alt="PyJaipur" /></span><span class="title"></span>
+				</a>
+
+					<!-- Nav -->
+						<!-- <nav>
+							<ul>
+								<li><a href="#menu">Meetups</a></li>
+							</ul>
+						</nav> -->
+
+				</div>
+			</header>
+
+	<div class="container">
+	  <div class="row">
+		  <div class ="col-sm-1"></div>
+		  <div class ="col-sm-10">
+			  <br />
+			  <br />
+			  <h1><b>More On Python</b> <img src="https://img.icons8.com/color/50/000000/python.png"></h1>
+			  <p> --- By Shivank Gautam </p>
+			  <br/>
+			  <p>One of the best parts about Python is its inbuilt functions. I still found that many novice developers like me sometimes don’t get the complete benefit of Python and write the code from scratch. but sometimes there is already a function available in python to do their work. that’s why I thought of writing this blog. if you like it you know what to do :D</p>
+			  
+			  <h2><b>Enumerate()</b></h2>
+			  
+			  <ul>
+				  <li>returns an enumerate object, it means which let you iterate one by one.</li>
+				  <li>an iterable must be a sequence, which can be iterable.</li>
+				  <li>let’s see it’s working.</li>
+			  </ul>
+			  
+			  <pre>
+				  <code>
+					  <strong>Syntax: enumerate</strong>(iterable, start = 0)
+					  >>> websites = ["Coursera", "EdX", "Udacity"]
+					  >>> list(enumerate(websites))
+					  [(0, 'Coursera'), (1, 'EdX'), (2, 'Udacity')]
+					  
+					  >>> list(enumerate(websites, start = 1))
+					  [(1, 'Coursera'), (2, 'EdX'), (3, 'Udacity')]
+					  
+					  >>> for index, value in enumerate(websites):
+					  ...     print(index, value)
+					  ... 
+					  
+					  0 Coursera
+					  1 EdX
+					  2 Udacity
+					</code>
+				</pre>
+				
+				<p>Why <strong>Enumerate</strong> is useful?</p>
+				
+				<ul>
+					<li>let you choose to start index.</li>
+					<li>it tracks the index so don’t let you make mistake while manipulating the data.</li>
+				</ul>
+				
+				<h2><b>Eval()</b></h2>
+				<ul>
+					<li>The expression argument is parsed and evaluated as a Python expression</li>
+					<li>The Expression argument is a string</li>
+				  </ul>
+				  
+				  <pre>
+					  <code>
+						  <strong>Syntax: eval</strong>(expression, globals=None, locals=None)
+						  >>> x = 1
+						  >>> y = 2
+						  >>> g = eval('x + y')
+						  >>> g
+						  3
+						</code>
+					</pre>
+					
+					<p>How I see it as an alternative to function.</p>
+					
+					
+					<h2><b>Zip()</b></h2>
+					
+					<ul>
+		<li>Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.</li>
+		<li>should only be used with unequal length inputs when you don’t care about trailing,</li>
+	  </ul>
+			  <pre><code>
+			  <strong>Syntax: zip</strong>(*iterables)
+			  >>> names = ["Thor", "IronMan", "Cap", "Hawkeye"]
+			  >>> weopens = ["Stormbreaker", "Jarvis", "Shield", "Arrow"]
+			  >>> zipped = zip(names, weopens)
+			  >>> list(zipped)
+			  >>> [('Thor', 'Stormbreaker'), ('IronMan', 'Jarvis'), ('Cap', 'Shield'), ('Hawkeye', 'Arrow')]
+			  </code></pre>
+			  <br>
+			  <p> <mark><a href = "https://docs.python.org/3/library/functions.html#zip">zip()</a></mark> in conjunction with the <mark>*</mark> operator can be used to unzip a list:</p>
+			  <br>
+			  <pre>
+			  <code>
+			  >>> names_unzipped, weapon_unzipped = zip(*zipped)
+			  >>> names_unzipped
+			  >>> ('Thor', 'IronMan', 'Cap', 'Hawkeye')
+			  </pre>
+			  </code>
+	
+	<h2><b>Filter()</b></h2>
+	  <ul>
+		<li>Construct an iterator from those elements of iterable for which function returns true.</li>
+	  </ul>
+			  <pre><code>
+			  <strong>Syntax: filter</strong>(function, iterable)
+			  >>> def Even(x):
+			  ...   if x%2 == 0:
+			  ...     return True
+			  ...   else:
+			  ...     return False
+			  >>> numbers = [1,2,3,4,5,6,7,8,9,10,44]
+			  >>> output = filter(Even, numbers)
+			  >>> for even in output:
+			  ...   print(even)
+			  ...
+				  2
+				  4
+				  6
+				  8
+				  10
+				  44
+			  </code></pre>
+	  
+	  <h2><b>Map()</b></h2>
+	  <ul>
+		<li>Return an iterator that applies the function to every item of iterable, yielding the results.</li>
+	  </ul>
+			  <pre><code>
+			  <strong>Syntax: map</strong>(function, iterable, ...)
+			  >>> numbers = [1,2,3,4,5,6,7,8,9,10,100]
+			  >>> output = map(Sqaure, numbers)
+			  >>> for sqr in output:
+			  ...   print(sqr)
+			  ...
+				  1
+				  4
+				  9
+				  16
+				  25
+				  36
+				  49
+				  64
+				  81
+				  100
+				  10000
+			  </code></pre>
+		  
+	<h2><b>Lambda()</b></h2>
+	  <ul>
+		<li>Return an iterator that applies the function to every item of iterable, yielding the results.</li>
+	  </ul>
+			  <pre><code>
+			  <strong>Syntax: lambda</strong>arguments : expression
+			  >>> example1 = lambda a,b: a+b
+			  >>> example1(1,2)
+			  3
+			  >>> example2 = lambda name: 'Hello '+ name
+			  >>> example2(Python)
+			  'Hello Python'
+			  </code></pre>
+	
+			  <br>
+			  <p>Hope you liked it. any suggestions for improvement are welcome.</p>
+			  <br>
+			  <p>Twitter Handle : <a href = "www.twitter.com/PySg_98" >@PySg_98</a></p>
+			  
+			  <p>Follow PyJaipur: 
+				<a href = "https://www.twitter.com/PyJaipur"><img src="https://img.icons8.com/small/32/000000/twitter.png"></a> 
+				<a href = "https://www.facebook.com/groups/PyJaipur"><img src="https://img.icons8.com/material-rounded/32/000000/facebook.png"></a>
+				<a href = "https://www.linkedin.com/company/PyJaipur"><img src="https://img.icons8.com/material/32/000000/linkedin.png"></a>
+				<a href = "https://t.me/pyjaipur"><img src="https://img.icons8.com/material/32/000000/sent.png"></a>
+				<a href = "https://www.github.com/PyJaipur"><img src="https://img.icons8.com/small/32/000000/github.png"></a>
+				<a href = ""><img src="https://img.icons8.com/material-rounded/32/000000/new-post.png"></a>
+			  </p>
+	</div>
+	  </div>
+	</div>
+</article>
+
+
+</html>
+	
+	
+		
+	
+		   

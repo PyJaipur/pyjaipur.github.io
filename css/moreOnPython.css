@@ -1,0 +1,40 @@
+/* @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,700italic,900,900italic,400italic,300italic,300); */
+
+body{
+    font-family: "Courier New", Courier, monospace;
+  /*   font-family: 'Merriweather', serif; */
+    font-size: 18px;
+    background-color: black;
+  }
+  
+  .row {
+    min-height:1000px;;
+      background-color: white;
+  }
+  
+  a, a:active{
+    text-decoration: underline;
+    color: black;
+  }
+  
+  a:hover{
+    color: grey;
+  }
+  
+  mark{
+    background-color: lightgrey;
+    color:black;
+  }
+  
+  pre{
+    padding-left: 20px;
+    background-color: #eaeaea;
+    color: black;
+  }
+  
+  .pageNav a, .pageNav a:active{
+    font-family: "", sans-serif, monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }  
