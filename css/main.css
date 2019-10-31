@@ -4156,3 +4156,16 @@ body.tg-fixedme .tg-headervtwo:before{display:none;}
 	position:absolute;
 	margin:-63px 0 0 -64px;
 }
+
+@media only screen and (max-width: 320px) {
+	.tg-rightarea {
+		float: unset !important;
+	}
+	.tg-leftarea {
+		float: unset !important;
+		text-align: center !important;
+	}
+	.tg-btnscrolltop {
+		right: 10px !important;
+	}
+}
