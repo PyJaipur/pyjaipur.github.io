@@ -1,0 +1,58 @@
+<!doctype html><html lang=en> <head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=description content="Official site for the python user community of Jaipur, Rajasthan, India"><meta name=viewport content="width=device-width, initial-scale=1"><title>PyJaipur</title><link rel=icon type=image/gif/png href=/images/logo.png><style>body{
+  font-family: sans-serif;
+}
+.content {
+  margin:40px auto;
+  max-width:650px;
+  line-height:1.6;
+  font-size:18px;
+  color:#444;
+  padding:10px;
+  background-color: #eee;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+h1,h2,h3{line-height:1.2}</style><style>
+img {
+  width: 100%;
+  height: auto;
+}
+</style></head> <body> <div class=topnav> <a href=/ >PyJaipur</a> <a href=/archives.html>Archives</a> <a href=https://www.meetup.com/PyJaipur target=_blank>Meetup.com</a> <a href=https://t.me/pyjaipur target=_blank>Telegram</a> <a href=https://github.com/PyJaipur/PyJaipur target=_blank>Github</a> </div> <div class=content> <h1>Archive</h1> <p> Our meetups and events are managed using Github. An up to date list of meetups can be found on our <a href="https://github.com/PyJaipur/PyJaipur/milestones?state=closed" target=_blank>github milestones</a>. </p> <p><a href=/old_meetups.html>Meetups before 2020 are archived on a separate page.</a></p> <h1>Gallery</h1> <img src=/images/archive/15.jpg alt="archive image images/archive/15.jpg"> <img src=/images/archive/10.jpg alt="archive image images/archive/10.jpg"> <img src=/images/archive/3.jpeg alt="archive image images/archive/3.jpeg"> <img src=/images/archive/8.jpeg alt="archive image images/archive/8.jpeg"> <img src=/images/archive/14.JPG alt="archive image images/archive/14.JPG"> <img src=/images/archive/team1.jpg alt="archive image images/archive/team1.jpg"> <img src=/images/archive/5.jpeg alt="archive image images/archive/5.jpeg"> <img src=/images/archive/11.jpg alt="archive image images/archive/11.jpg"> <img src=/images/archive/12.JPG alt="archive image images/archive/12.JPG"> <img src=/images/archive/4.jpeg alt="archive image images/archive/4.jpeg"> <img src=/images/archive/13.JPG alt="archive image images/archive/13.JPG"> <img src=/images/archive/2.jpeg alt="archive image images/archive/2.jpeg"> <img src=/images/archive/meetup1.jpeg alt="archive image images/archive/meetup1.jpeg"> <img src=/images/archive/9.jpg alt="archive image images/archive/9.jpg"> <img src=/images/archive/1.jpeg alt="archive image images/archive/1.jpeg"> <img src=/images/archive/7.jpeg alt="archive image images/archive/7.jpeg"> <img src=/images/archive/540_440/15.jpg alt="archive image images/archive/540_440/15.jpg"> <img src=/images/archive/540_440/10.jpg alt="archive image images/archive/540_440/10.jpg"> <img src=/images/archive/540_440/3.jpeg alt="archive image images/archive/540_440/3.jpeg"> <img src=/images/archive/540_440/8.jpeg alt="archive image images/archive/540_440/8.jpeg"> <img src=/images/archive/540_440/14.JPG alt="archive image images/archive/540_440/14.JPG"> <img src=/images/archive/540_440/5.jpeg alt="archive image images/archive/540_440/5.jpeg"> <img src=/images/archive/540_440/11.jpg alt="archive image images/archive/540_440/11.jpg"> <img src=/images/archive/540_440/12.JPG alt="archive image images/archive/540_440/12.JPG"> <img src=/images/archive/540_440/4.jpeg alt="archive image images/archive/540_440/4.jpeg"> <img src=/images/archive/540_440/13.JPG alt="archive image images/archive/540_440/13.JPG"> <img src=/images/archive/540_440/2.jpeg alt="archive image images/archive/540_440/2.jpeg"> <img src=/images/archive/540_440/9.jpg alt="archive image images/archive/540_440/9.jpg"> <img src=/images/archive/540_440/1.jpeg alt="archive image images/archive/540_440/1.jpeg"> <img src=/images/archive/540_440/7.jpeg alt="archive image images/archive/540_440/7.jpeg"> <img src=/images/archive/540_440/6.jpeg alt="archive image images/archive/540_440/6.jpeg"> <img src=/images/archive/6.jpeg alt="archive image images/archive/6.jpeg"> </div> <script>
+  setInterval(function (){
+    var current_hash = "c1846b70a0e0fd05cb4085112d0cf87f";
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        if(current_hash !== this.responseText) {
+          console.log(current_hash, 'old');
+          console.log(this.responseText, 'new');
+          location.reload();
+        }
+      }
+    };
+    xhttp.open("GET", "/.sitehash.txt", true);
+    xhttp.send();
+  }, 300.0);
+</script> <input type=hidden value=c1846b70a0e0fd05cb4085112d0cf87f> </body> </html>

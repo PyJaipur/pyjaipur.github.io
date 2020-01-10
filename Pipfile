@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+staticjinja = "*"
+black = "*"
+pre-commit = "*"
+
+[packages]
+jinja2 = "*"
+htmlmin = "*"
+watchdog = "*"
+staticsite = "*"
+
+[requires]
+python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
