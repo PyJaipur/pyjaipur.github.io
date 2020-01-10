@@ -95,10 +95,10 @@
         },
         "staticsite": {
             "hashes": [
-                "sha256:f6de6a99414870df2db428147dc431b447e1515a79bfb4f0878aaba73079fd09"
+                "sha256:d9e91746967db6c69042896acecea4359bb00695c05ac00ec4375d6e7e362dd7"
             ],
             "index": "pypi",
-            "version": "==2020.1.9"
+            "version": "==2020.1.10.post1"
         },
         "watchdog": {
             "hashes": [

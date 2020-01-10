@@ -6,7 +6,7 @@
     <meta name="description" content="Official site for the python user community of Jaipur, Rajasthan, India">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PyJaipur</title>
-    <link rel="icon" type="image/gif/png" href="/images/logo.png">
+    <link rel="icon" type="image/gif/png" href="{{ baseurl }}/images/logo.png">
     <style>{% include 'css/.base.css' %}</style>
     {% block head %}
     {% endblock %}
@@ -14,8 +14,8 @@
 
 <body>
   <div class="topnav">
-    <a href="/">PyJaipur</a>
-    <a href="/archives.html">Archives</a>
+    <a href="{{ baseurl }}">PyJaipur</a>
+    <a href="{{ baseurl }}/archives.html">Archives</a>
     {% include '.external_links.html' %}
   </div>
   <div class='content'>
