@@ -221,20 +221,4 @@ img {
     gallery.appendChild(image_items[image_index]);
   };
   document.getElementById('more-button').click();
-</script> </div> <script>
-  setInterval(function (){
-    var current_hash = "bc3bd39d68ac2d3cef7625d04c45671d";
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        if(current_hash !== this.responseText) {
-          console.log(current_hash, 'old');
-          console.log(this.responseText, 'new');
-          location.reload();
-        }
-      }
-    };
-    xhttp.open("GET", "/.sitehash.txt", true);
-    xhttp.send();
-  }, 300.0);
-</script> <input type=hidden value=bc3bd39d68ac2d3cef7625d04c45671d> </body> </html>
+</script> </div> </body> </html>
