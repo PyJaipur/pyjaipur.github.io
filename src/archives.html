@@ -15,8 +15,5 @@ Our meetups and events are managed using Github.
 An up to date list of  meetups can be found on our <a href='https://github.com/PyJaipur/PyJaipur/milestones?state=closed' target='_blank'>github milestones</a>.
 </p>
 <p>Meetups before 2020 are listed on <a href='{{ baseurl }}/old_meetups.html'>a separate page.</a></p>
-<h1>Gallery</h1>
-{% for pth in walk("images/archive") %}
-<img src="{{ baseurl }}/{{ pth }}" alt="archive image {{ pth }}">
-{% endfor %}
+{% include '.gallery_page.html' %}
 {% endblock %}

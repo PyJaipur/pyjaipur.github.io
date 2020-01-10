@@ -39,9 +39,191 @@ img {
   width: 100%;
   height: auto;
 }
-</style></head> <body> <div class=topnav> <a href=/pyjaipur.github.io>PyJaipur</a> <a href=/pyjaipur.github.io/archives.html>Archives</a> <a href=https://www.meetup.com/PyJaipur target=_blank>Meetup.com</a> <a href=https://t.me/pyjaipur target=_blank>Telegram</a> <a href=https://github.com/PyJaipur/PyJaipur target=_blank>Github</a> </div> <div class=content> <h1>Archive</h1> <p> Our meetups and events are managed using Github. An up to date list of meetups can be found on our <a href="https://github.com/PyJaipur/PyJaipur/milestones?state=closed" target=_blank>github milestones</a>. </p> <p>Meetups before 2020 are listed on <a href=/pyjaipur.github.io/old_meetups.html>a separate page.</a></p> <h1>Gallery</h1> <img src=/pyjaipur.github.io/images/archive/15.jpg alt="archive image images/archive/15.jpg"> <img src=/pyjaipur.github.io/images/archive/10.jpg alt="archive image images/archive/10.jpg"> <img src=/pyjaipur.github.io/images/archive/3.jpeg alt="archive image images/archive/3.jpeg"> <img src=/pyjaipur.github.io/images/archive/8.jpeg alt="archive image images/archive/8.jpeg"> <img src=/pyjaipur.github.io/images/archive/14.JPG alt="archive image images/archive/14.JPG"> <img src=/pyjaipur.github.io/images/archive/team1.jpg alt="archive image images/archive/team1.jpg"> <img src=/pyjaipur.github.io/images/archive/5.jpeg alt="archive image images/archive/5.jpeg"> <img src=/pyjaipur.github.io/images/archive/11.jpg alt="archive image images/archive/11.jpg"> <img src=/pyjaipur.github.io/images/archive/12.JPG alt="archive image images/archive/12.JPG"> <img src=/pyjaipur.github.io/images/archive/4.jpeg alt="archive image images/archive/4.jpeg"> <img src=/pyjaipur.github.io/images/archive/13.JPG alt="archive image images/archive/13.JPG"> <img src=/pyjaipur.github.io/images/archive/2.jpeg alt="archive image images/archive/2.jpeg"> <img src=/pyjaipur.github.io/images/archive/meetup1.jpeg alt="archive image images/archive/meetup1.jpeg"> <img src=/pyjaipur.github.io/images/archive/9.jpg alt="archive image images/archive/9.jpg"> <img src=/pyjaipur.github.io/images/archive/1.jpeg alt="archive image images/archive/1.jpeg"> <img src=/pyjaipur.github.io/images/archive/7.jpeg alt="archive image images/archive/7.jpeg"> <img src=/pyjaipur.github.io/images/archive/540_440/15.jpg alt="archive image images/archive/540_440/15.jpg"> <img src=/pyjaipur.github.io/images/archive/540_440/10.jpg alt="archive image images/archive/540_440/10.jpg"> <img src=/pyjaipur.github.io/images/archive/540_440/3.jpeg alt="archive image images/archive/540_440/3.jpeg"> <img src=/pyjaipur.github.io/images/archive/540_440/8.jpeg alt="archive image images/archive/540_440/8.jpeg"> <img src=/pyjaipur.github.io/images/archive/540_440/14.JPG alt="archive image images/archive/540_440/14.JPG"> <img src=/pyjaipur.github.io/images/archive/540_440/5.jpeg alt="archive image images/archive/540_440/5.jpeg"> <img src=/pyjaipur.github.io/images/archive/540_440/11.jpg alt="archive image images/archive/540_440/11.jpg"> <img src=/pyjaipur.github.io/images/archive/540_440/12.JPG alt="archive image images/archive/540_440/12.JPG"> <img src=/pyjaipur.github.io/images/archive/540_440/4.jpeg alt="archive image images/archive/540_440/4.jpeg"> <img src=/pyjaipur.github.io/images/archive/540_440/13.JPG alt="archive image images/archive/540_440/13.JPG"> <img src=/pyjaipur.github.io/images/archive/540_440/2.jpeg alt="archive image images/archive/540_440/2.jpeg"> <img src=/pyjaipur.github.io/images/archive/540_440/9.jpg alt="archive image images/archive/540_440/9.jpg"> <img src=/pyjaipur.github.io/images/archive/540_440/1.jpeg alt="archive image images/archive/540_440/1.jpeg"> <img src=/pyjaipur.github.io/images/archive/540_440/7.jpeg alt="archive image images/archive/540_440/7.jpeg"> <img src=/pyjaipur.github.io/images/archive/540_440/6.jpeg alt="archive image images/archive/540_440/6.jpeg"> <img src=/pyjaipur.github.io/images/archive/6.jpeg alt="archive image images/archive/6.jpeg"> </div> <script>
+</style></head> <body> <div class=topnav> <a href=/pyjaipur.github.io>PyJaipur</a> <a href=/pyjaipur.github.io/archives.html>Archives</a> <a href=https://www.meetup.com/PyJaipur target=_blank>Meetup.com</a> <a href=https://t.me/pyjaipur target=_blank>Telegram</a> <a href=https://github.com/PyJaipur/PyJaipur target=_blank>Github</a> </div> <div class=content> <h1>Archive</h1> <p> Our meetups and events are managed using Github. An up to date list of meetups can be found on our <a href="https://github.com/PyJaipur/PyJaipur/milestones?state=closed" target=_blank>github milestones</a>. </p> <p>Meetups before 2020 are listed on <a href=/pyjaipur.github.io/old_meetups.html>a separate page.</a></p> <h1>Gallery</h1> <div id=gallery></div> <button id=more-button>Show More</button> <style>
+#more-button{
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 3px;
+  margin: auto;
+  width: 100%;
+  font-size: 1.3em;
+}
+</style> <script>
+  var image_items = [];
+  var image_index = -1;
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/15.jpg");
+    img.setAttribute('alt', "archive image images/archive/15.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/10.jpg");
+    img.setAttribute('alt', "archive image images/archive/10.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/3.jpeg");
+    img.setAttribute('alt', "archive image images/archive/3.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/8.jpeg");
+    img.setAttribute('alt', "archive image images/archive/8.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/14.JPG");
+    img.setAttribute('alt', "archive image images/archive/14.JPG");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/team1.jpg");
+    img.setAttribute('alt', "archive image images/archive/team1.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/5.jpeg");
+    img.setAttribute('alt', "archive image images/archive/5.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/11.jpg");
+    img.setAttribute('alt', "archive image images/archive/11.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/12.JPG");
+    img.setAttribute('alt', "archive image images/archive/12.JPG");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/4.jpeg");
+    img.setAttribute('alt', "archive image images/archive/4.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/13.JPG");
+    img.setAttribute('alt', "archive image images/archive/13.JPG");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/2.jpeg");
+    img.setAttribute('alt', "archive image images/archive/2.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/meetup1.jpeg");
+    img.setAttribute('alt', "archive image images/archive/meetup1.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/9.jpg");
+    img.setAttribute('alt', "archive image images/archive/9.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/1.jpeg");
+    img.setAttribute('alt', "archive image images/archive/1.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/7.jpeg");
+    img.setAttribute('alt', "archive image images/archive/7.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/15.jpg");
+    img.setAttribute('alt', "archive image images/archive/540_440/15.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/10.jpg");
+    img.setAttribute('alt', "archive image images/archive/540_440/10.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/3.jpeg");
+    img.setAttribute('alt', "archive image images/archive/540_440/3.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/8.jpeg");
+    img.setAttribute('alt', "archive image images/archive/540_440/8.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/14.JPG");
+    img.setAttribute('alt', "archive image images/archive/540_440/14.JPG");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/5.jpeg");
+    img.setAttribute('alt', "archive image images/archive/540_440/5.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/11.jpg");
+    img.setAttribute('alt', "archive image images/archive/540_440/11.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/12.JPG");
+    img.setAttribute('alt', "archive image images/archive/540_440/12.JPG");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/4.jpeg");
+    img.setAttribute('alt', "archive image images/archive/540_440/4.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/13.JPG");
+    img.setAttribute('alt', "archive image images/archive/540_440/13.JPG");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/2.jpeg");
+    img.setAttribute('alt', "archive image images/archive/540_440/2.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/9.jpg");
+    img.setAttribute('alt', "archive image images/archive/540_440/9.jpg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/1.jpeg");
+    img.setAttribute('alt', "archive image images/archive/540_440/1.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/7.jpeg");
+    img.setAttribute('alt', "archive image images/archive/540_440/7.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/540_440/6.jpeg");
+    img.setAttribute('alt', "archive image images/archive/540_440/6.jpeg");
+    image_items.push(img);
+  
+    var img = document.createElement('img');
+    img.setAttribute('src', "/pyjaipur.github.io/images/archive/6.jpeg");
+    img.setAttribute('alt', "archive image images/archive/6.jpeg");
+    image_items.push(img);
+  
+  document.getElementById('more-button').onclick = function (){
+    var gallery = document.getElementById('gallery');
+    image_index += 1;
+    if(image_index >= image_items.length){
+      this.remove();
+    }
+    gallery.appendChild(image_items[image_index]);
+  };
+  document.getElementById('more-button').click();
+</script> </div> <script>
   setInterval(function (){
-    var current_hash = "6b2db4841dc8dcff342d2531192dac0f";
+    var current_hash = "bc3bd39d68ac2d3cef7625d04c45671d";
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -55,4 +237,4 @@ img {
     xhttp.open("GET", "/.sitehash.txt", true);
     xhttp.send();
   }, 300.0);
-</script> <input type=hidden value=6b2db4841dc8dcff342d2531192dac0f> </body> </html>
+</script> <input type=hidden value=bc3bd39d68ac2d3cef7625d04c45671d> </body> </html>
