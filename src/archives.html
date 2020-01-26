@@ -1,19 +1,9 @@
 {% extends '.base.html' %}
-{% block head %}
-<style>
-img {
-  width: 100%;
-  height: auto;
-}
-</style>
-{% endblock %}
-
 {% block content %}
 <h1>Archive</h1>
-<p>
-Our meetups and events are managed using Github.
-An up to date list of  meetups can be found on our <a href='https://github.com/PyJaipur/PyJaipur/milestones?state=closed' target='_blank'>github milestones</a>.
-</p>
-<p>Meetups before 2020 are listed on <a href='{{ baseurl }}/old_meetups.html'>a separate page.</a></p>
-{% include '.gallery_page.html' %}
+<ul>
+  <li> Our meetups and events are managed using <a href='https://github.com/PyJaipur/PyJaipur/milestones' target='_blank'>github milestones</a>.</li>
+  <li> Meetups before 2020 are listed on <a href='{{ baseurl }}/old_meetups.html'>a separate page.</a> </li>
+  <li> <a href='https://drive.google.com/drive/folders/1cuZ9h7VYSXlJUYMALhBK62STvgoXMLn3'>Our photo gallery</a> is organized by year/month/day/event.  </li>
+</ul>
 {% endblock %}
